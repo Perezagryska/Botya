@@ -63,7 +63,7 @@ async def is_user_admin(chat_id: int, user_id: int):
 # --- ОБРАБОТЧИК СТАРТА И ПРИВЕТСТВИЯ ---
 @dp.message(Command("start"))
 async def cmd_start(msg: types.Message):
-    await msg.answer("👋 Привет! Это бот по имени <b>Ботя</b>. Сделан как помощник админам, напиши меню или /menu")
+    await msg.answer("👋 Привет! Это бот по имени <b>Ботя</b>. Сделан как помощник админам, напиши меню")
 
 @dp.message(F.new_chat_members)
 async def greeter(msg: types.Message):
